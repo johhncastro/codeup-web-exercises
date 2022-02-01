@@ -45,6 +45,14 @@
 // var canEnroll = (classNotFull && noScheduleConflict);
 // alert('it is  ' + canEnroll + 'that you can enroll in this class');
 
+// above is showing if a student can enroll or not according to javascript
+
+// var itemsBought = (prompt('How many items are you buying?'))
+// var premiumMember = (prompt('Are you a Premium Member?'))
+// var productOfferApplied = (itemsBought >= 2)(prompt('Offer Accepted'))
+
+
+
 
 
 
