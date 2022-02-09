@@ -1,4 +1,4 @@
-// (function(){
+(function(){
     "use strict";
 
     /**
@@ -73,4 +73,5 @@ function last(input){
 }
 
 last(numbers)
-// })();
+
+})();
