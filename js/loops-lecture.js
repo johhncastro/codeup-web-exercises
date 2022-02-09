@@ -50,12 +50,71 @@
 
 //do while loop
 
-var randomNumber = Math.floor(Math.random() *6) +1
-var guess;
+// var randomNumber = Math.floor(Math.random() *6) +1
+// var guess;
+//
+// do {
+//     guess = parseInt(prompt('Enter number between 1 and 6'));
+// } while (guess !== randomNumber);
+//
+// alert('your guess of '+ guess + ' matches the number '+ randomNumber+ '!');
 
-do {
-    guess = parseInt(prompt('Enter number between 1 and 6'));
-} while (guess !== randomNumber);
 
-alert('your guess of '+ guess + ' matches the number '+ randomNumber+ '!');
+
+// var count =100;
+// while (count >= 0){
+//     console.log(count);
+//     count = count -1;
+// }
+
+// for (var count =100; count >= 0; count = count -1){
+//     console.log(count)
+// }
+
+//typically have a variable called i whichs means to itterate
+
+// for (var i = 100; i >=0; i--){
+//     console.log(i);
+// }
+// for (var i = 0; i <= 100; i ++){
+//     console.log(i);
+// }
+
+// this is a for loop that typically we will be using the most
+
+
+// for (var i = 0; i < 100; i ++){
+//     console.log(i);
+// }
+
+
+
+// for(var z = 1 ; z <= 9; z++){
+//     console.log(z.toString().repeat(z));
+// }
+//
+// for(var outer = 1 ; outer <= 9; outer++){
+//     var result = "";
+//
+//     for(var inner = 1 ; inner <= outer ; inner++){
+//         // console.log('inner',inner);
+//         result += outer;
+//     }
+//
+//     console.log(result);
+// }
+
+// this is the answer to number 4 on the exercise on for loops
+
+
+var string =''
+for (var i =0; i < 8 ; i++){
+    var word = prompt('lets make a sentence');
+    if (word === 'curses'){
+        console.log('u cannot say that');
+        continue;
+    }
+    string = string + ' '+ word;
+    console.log(string)
+}
 

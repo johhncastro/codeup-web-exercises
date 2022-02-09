@@ -53,15 +53,15 @@ var allCones = Math.floor(Math.random() * 50) + 50;
 // // console.log('No cones left')
 
 
-do{
-    var conesBought = Math.floor(Math.random()*5) +1;
-    if (conesBought > allCones) {
-        console.log('Cannot sell you '+ conesBought + ' I only have ' + allCones);
-    } else {
-        console.log(conesBought + ' cones sold... '+ allCones + ' are left');
-        allCones = allCones -conesBought
-    }
-
-} while (allCones > 0 );
-
-console.log('yay all cones sold');
+// do{
+//     var conesBought = Math.floor(Math.random()*5) +1;
+//     if (conesBought > allCones) {
+//         console.log('Cannot sell you '+ conesBought + ' I only have ' + allCones);
+//     } else {
+//         console.log(conesBought + ' cones sold... '+ allCones + ' are left');
+//         allCones = allCones -conesBought
+//     }
+//
+// } while (allCones > 0 );
+//
+// console.log('yay all cones sold');
