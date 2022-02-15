@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Register With Us</title>
+    </head>
+    <main>
+        <body>
+            <section>
+                <h4>Please enter email and password to register with us!</h4>
+                Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password:<br>
+                <form method="POST" action="https://request-inspector.glitch.me/">
+                    <input id="email" type="text" name="email" placeholder="Email Address">
+                    <input id="password" type="password" name="password" placeholder="Password">
+            </section>
+            <section>
+                <p> Bio : please leave a short description of yourself!</p>
+                <textarea id="bio" type="textarea" name="bio" style="width: 25%;"></textarea><hr>
+            </section>
+        <!--    <section>-->
+        <!--        <p>How did you hear about us!</p>-->
+        <!--        <label for="Billboard">-->
+        <!--            Billboard <input id="billboard" type="radio" name="ad-type" value="billboard">-->
+        <!--        </label>-->
+        <!--        <label for="Radio Ad">-->
+        <!--            Radio Ad <input id="Radio Ad" type="radio" name="ad-type" value="radio ad">-->
+        <!--        </label>-->
+        <!--        <label for="internet Ad">-->
+        <!--            Internet Ad <input id="internet Ad" type="radio" name="ad-type" value="internet ad">-->
+        <!--        </label>-->
+        <!--        <label for="other">-->
+        <!--            Other <input id="other" type="radio" name="ad-type" value="other">-->
+        <!--        </label><hr>-->
+        <!--    </section>-->
+            <section>
+                <p>How did you hear about us!</p>
+                <label for="Billboard">
+                    Billboard <input id="billboard" type="checkbox" name="ad-type" value="billboard">
+                </label>
+                <label for="Radio Ad">
+                    Radio Ad <input id="Radio Ad" type="checkbox" name="ad-type" value="radio ad">
+                </label>
+                <label for="internet Ad">
+                    Internet Ad <input id="internet Ad" type="checkbox" name="ad-type" value="internet ad">
+                </label>
+                <label for="other">
+                    Other <input id="other" type="checkbox" name="ad-type" value="other">
+                </label><hr>
+            </section>
+            <section>
+                <p>What type of browser did you use to fill out this form?</p>
+                <select name="browser-type">
+                    <option id="chrome" name="type" value="chrome">Google Chrome</option>
+                    <option id="safari" name="type" value="safari">Safari</option>
+                    <option id="firefox" name="type" value="firefox">Firefox</option>
+                </select>
+                <br>
+                <br>
+            </section>
+            <section>
+                <button type="submit">Submit</button>
+            </section>
+        </body>
+    </main>
+</html>
