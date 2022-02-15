@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Objects Intro</title>
+</head>
+<body>
+<h1>Intro to Objects</h1>
+<script>
+    "use strict";
+    /**
+        JS Objects
+        - like a named index array
+        - used to store related state and behavior
+        - where arrays are good for storing lists of data, objects store related aspects of a greater structure
+        - we have already used objects: String, Array, Math, Number
+     */
+    // Creating Objects (dog, user, forecast, dictionaryEntry, movie, post, etc.)
+    // New Object Instance
+    // var dog = new Object();
+    // console.log(typeof dog);
+    // Object Literal Notation
+    // var cat = {};
+    // console.log(typeof cat);
+    // Setting Properties on a Custom Object
+    // create a pet object that has the following properties...
+    // givenName
+    // age
+    // species
+    // hasOffspring
+    // valueInDollars
+    var pet = {};
+    pet.givenName = 'Google';
+    pet.ageInYears = 12;
+    pet.species = 'Dog';
+    pet.hasOffspring = true;
+    pet['value-in-dollars'] = 400; // alternative syntax for assigning properties
+    // console.log(pet);
+    var pet2 = {
+        givenName: 'Ariel',
+        age: 5,
+        species: 'Dog',
+        hasOffspring: false,
+        valueInDollars: 'priceless'
+    };
+    // var pets =[pet,pet2,pet3]
+    // console.log(pets[0].givenName)
+    // Peeking into an Object
+    // console.log(pet);
+    // Accessing Properties on an Object
+    // console.log(pet.givenName);
+    // console.log(pet2.givenName);
+    // console.log(pet2['givenName']);
+    //
+    // pet.givenName = "Sabrina";
+    // console.log(pet.givenName);
+    // !! MINI-EXERCISE 1 !!
+    // Nested Values
+    // Add the following to a pet object...
+    // altNames
+    // vitals: averageTemp, restingHeartRate, isHungry
+
+
+var pet3 = {};
+    pet3.givenName = 'Goldie';
+    pet3.age = 2;
+    pet3.specie= 'Dog';
+    pet3.hasOffspring = false;
+    pet3.valueInDollars = 300;
+    pet3.altNames = [
+        'Goldy Oldie',
+        'Gold Man',
+    ];
+    pet3.vitals ={};
+    pet3.vitals.averageTempDegF = 98;
+    pet3.vitals.restingHeartRate = 70;
+    pet3.vitals.isHungry = true;
+    pet3.vitals.eats = 0;
+
+// console.log(pet3.altNames[0]);
+//     var food = 1
+//
+//     function pet3Eats(){
+//         if (pet3.vitals.eats === 0){
+//            return(pet3.vitals.eats + food)
+//         }
+//         else return 1
+//     }
+// pet3Eats()
+//     pet
+//     function pet3Satisfied(){
+//         if (pet3.vitals.eats === 1){
+//             return pet3.vitals.isHungry === false;
+//         }
+//     }
+// pet3Satisfied()
+//
+// console.log(pet3.vitals[3]);
+// console.log(pet3.vitals[2]);
+// console.log(pet3)
+
+
+ var herobrine = false;
+    var beverage = {};
+    beverage.brandName ='Coke';
+    beverage.type ='Soda';
+    beverage.volumeInLiters = 1;
+    beverage.priceInCents = 199;
+    beverage.expirationDate = '10/12/2031';
+    beverage.datesOfPreviousSips = [
+        3/21/2031,
+        4/2/2031,
+        4/22/2031];
+    beverage.isOpen = true;
+
+
+
+var beverage2 = {
+    brandName : 'Sprite',
+    type : 'Soda',
+    volumeInLiters : .5,
+    priceInCents : 99,
+    expirationDate : '10/23/2031',
+    datesOfPreviousSips: [undefined],
+    isOpen: false
+    };
+
+var beverage3 ={
+    brandName : 'Starbucks',
+    type : 'Coffee',
+    volumeInLiters: .3,
+    priceInCents: 99,
+    expirationDate: '4/25/2031',
+    datesOfPreviousSips: [undefined],
+    isOpen: false,
+};
+
+
+
+// ARRAY OF OBJECTS
+
+
+var pets= [{
+    givenName:'Google',
+    isDog: true },{
+    givenName: 'Ariel',
+    isDog: true },{
+    givenName: 'HeroBrine',
+    isDog: false}
+];
+
+// for (var i = 0;i <pets.length; i ++){
+//     console.log(pets[i].givenName)
+// }
+
+
+    var users = [
+        {
+            givenName: 'Sam',
+            age: 21
+        },
+        {
+            givenName: 'Cathy',
+            age: 34
+        },
+        {
+            givenName: 'Karen',
+            age: 43
+        }
+    ];
+
+// for (var i = 0; i < users.length; i ++){
+//     console.log(users[i].givenName)
+// }
+
+// console.log(users[0].givenName,users[1].givenName,users[2].givenName)
+// var message =' ';
+
+// users.forEach(function (user){
+//     message += users.givenName+ ' ';
+// })
+    for (var i = 0; i < users.length; i ++){
+      var allAges = users[i].age
+    }
+    // console.log(allAges);
+    for (var i = 0; i < users.length; i ++){
+        users[i].givenName = 'John Doe'
+    }
+console.log(users);
+    for (var i = 0; i < users.length; i ++){
+        users[i].age =  users[i].age + 1
+    }
+// console.log(users);
+
+
+    // var pet3 = {
+    //     name: 'Bowser',
+    //     age: 6,
+    //     species: 'dog',
+    //     hasOffspring: false,
+    //     valueInDollars: 'priceless',
+    //     altNames: [
+    //         'Bowser Boy',
+    //         'Bowser Man',
+    //         'Bowser Buddy',
+    //         'Puggle Wuggle Boy'
+    //     ],
+    //     vitals: {
+    //         averageTempDegF: 101,
+    //         averageRestingHeartRate: 80,
+    //         isHungry: true
+    //     }
+    // };
+    // log if Bowser is hungry
+    // log Bowser's average heartRate
+    // log Bowser's most recent alternative name
+    // change age to 7 and isHungry to false
+    // Arrays of Objects
+    // var pets = [
+    //     {
+    //         givenName: 'Spot',
+    //         isDog: true
+    //     },
+    //     {
+    //         givenName: 'Max',
+    //         isDog: false
+    //     },
+    //     {
+    //         givenName: 'Goldy',
+    //         isDog: false
+    //     }
+    // ];
+    // !! MINI EXERCISE 2 !!
+    // Getting a List of Object Keys as an array
+    // console.log(Object.keys(pet4));
+    // Assigning Functionality to an Object
+    // var pet4 = {
+    //     name: "Pickles",
+    //     age: 20,
+    //     species: "horse",
+    //     eat: function (food) {
+    //         console.log("nom nom nom " + food);
+    //     },
+    //     gallop: function() {
+    //         console.log("THUNK THUMP...THUNK THUMP!");
+    //     }
+    // };
+    //
+    // pet4.eat("carrots");
+    // pet4.gallop();
+    // The this Keyword
+    // var pet6 = {
+    //     name: "Sparky",
+    //     age: 3,
+    //     getOlder: function() {
+    //         console.log(this.age);
+    //         this.age += 1;
+    //     }
+    // };
+    //
+    // console.log(pet6.age);
+    // pet6.getOlder();
+    // console.log(pet6.age);
+    // why use this vs. the object name: https://stackoverflow.com/questions/12799702/javascript-this-versus-object-name
+    // !! MINI EXERCISE 3 !!
+</script>
+</body>
+</html>
