@@ -1,0 +1,20 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Ubuntu, sans-serif;
+}
+.message-info {
+    border: 1px solid black;
+}
+.message-success {
+    border: 1px solid black;
+}
+.message-warning {
+    border: 1px solid black;
+}
+.message-error {
+    border: 1px solid black;
+}
