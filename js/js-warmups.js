@@ -60,3 +60,70 @@ users.forEach(function (usr){
     console.log(usr.username + ' is '+'not an admin ' +'and can be reached at '+ usr.email)
 })
 
+function areaOrPerimeter(l,w){
+    if (isNaN(parseFloat(l)) || isNaN(parseFloat(w))){
+        return false;
+    } if (l === w){
+        return l*w;
+    } else {
+        return ((l +l)+(w+w));
+    }
+
+}
+
+function sumTheStrings(input1,input2){
+    if (isNaN(input1)  || isNaN(input2)){
+        return false;
+    } else {
+        return Number(parseFloat(input1)+parseFloat(input2))
+    }
+}
+
+var john ={
+    firstName: 'John',
+    lastName: 'Castro',
+    email: 'jcmoney123@lulw.com',
+    password: 'OMEGALUL777'
+}
+function getSimpleUser(user){
+    return {
+        firstName: user.firstName.toLowerCase(),
+        lastName: user.lastName.toLowerCase()
+    }
+}
+
+
+var firstNames = ['CJ','John','Kat','Google']
+var lastName = ['Cat','Castro','Lully','Yahoo']
+
+for (var i = 0; i < 4; i ++){
+
+}
+function createNames(array1,array2){
+    var output =[];
+    for (var i = 0; i < 4; i ++){
+        output.push({
+            firstNames:array1[i],
+            lastName:array2[i]
+        });
+    }
+    return output;
+}
+
+function remainder(int1,int2) {
+    if (int1 > int2){
+        return in1 % in2;
+    } else {
+        int2 % int1;
+    }
+}
+
+function printer_error(string){
+    return {
+    }
+}
+
+
+function isLockNessMonster(s){
+   return  s.includes('tree fiddy') || s.includes('3.50')||s.includes ('three fifty')
+}
