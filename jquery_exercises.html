@@ -6,11 +6,11 @@
 </head>
 <body>
 
-<h1 id="Header1" class="codeup">YOOO</h1>
-<p id="Paragraph1" class="codeup">HIII </p>
-<ul id="unordered-list1" >World</ul>
-<li id="list-item1">lollll</li>
-<div id="div1">yoooo</div>
+<h1>HELLO WORLD :)</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A eius et excepturi id impedit incidunt itaque laboriosam libero minus, molestias nobis odio officiis perferendis praesentium provident quae sed veritatis voluptatibus. </p>
+<li>random list items</li>
+<li>random list items</li>
+<li>random list items</li>
 
 
 <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
@@ -19,7 +19,22 @@
     "use strict";
 
     $(document).ready(function (){
-        $('li').css()
+
+
+
+        $('h1').click(function (){
+            $(this).css('background','hotpink');
+        });
+
+        $('p').dblclick(function (){
+            $(this).css('font-size','18px');
+        });
+        $('li').hover(function (){
+            $(this).css('color','red');
+        },function (){
+            $(this).css('color','black');
+        });
+
     });
 
 

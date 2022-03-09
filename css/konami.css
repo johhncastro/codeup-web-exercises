@@ -1,0 +1,14 @@
+#sleep {
+ width: 100%;
+    position: fixed;
+    height: 100%;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /*background: fixed;*/
+    height: 100%;
+    margin: 0;
+}
