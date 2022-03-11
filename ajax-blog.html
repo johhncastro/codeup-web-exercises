@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax Blog</title>
+</head>
+<body>
+<div id="posts">
+    <h1>Date</h1>
+    <h3>subject</h3>
+    <h3>Categories</h3>
+    <p>Content</p>
+
+
+
+</div>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+
+    var html = ''
+    function createHTML(post){
+        for (var i = 0; i < post.length;i++){
+            html +=
+                '<h1>'+post[i].title+'</h1>'+
+                '<h3>'+post[i].date +'</h3>'+
+                '<h3>'+post[i].categories+'</h3>'+
+                '<p>'+post[i].content+'</p>'
+        }
+        return html;
+    }
+
+
+
+    $.get('data/blog.json').done(function (post){
+        $('#posts').html(createHTML(post))
+    });
+
+
+
+</script>
+</body>
+</html>
