@@ -2,7 +2,6 @@
 
 // 1. Create a file named map-filter-reduce.js in your js directory and
 //    copy the user's data below into it.
-//    <--DONE
 
 const users = [
     {
@@ -86,7 +85,7 @@ console.log('Longest email is: ' + longestEmail);
 //    Your instructors are: ryan, luis, zach, fernando, justin.
 console.log('Problem 06.........................');
 const userNamesInString = users.reduce((pv, cv, i, a) =>
-        pv + cv.name + (i < (a.length - 1) ? ', ' : '.')                                    //   <-- TRICKY!!!
+        pv + cv.name + (i < (a.length - 1) ? ', ' : '.')
     , '');
 
 console.log('User names in a string: ' + userNamesInString);
